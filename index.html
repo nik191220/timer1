@@ -20,9 +20,11 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 20px; /* Расстояние между элементами */
         }
         .timer div {
-            margin: 10px 0;
+            margin: 0; /* Убираем отступы, чтобы элементы были в одну строку */
         }
     </style>
 </head>
@@ -37,7 +39,7 @@
 
 <script>
     // Установи здесь свою дату
-    const startDate = new Date("2024-10-19T00:00:00");
+    const startDate = new Date("2023-10-01T00:00:00");
 
     function updateTimer() {
         const now = new Date();
